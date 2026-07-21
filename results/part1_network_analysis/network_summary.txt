@@ -1,0 +1,12 @@
+Human PPI Network Summary
+==========================
+Nodes             : 14,666
+Edges             : 69,441
+Connected comps   : 102
+Largest component : 14,504 nodes
+Avg degree        : 9.47
+Max degree        : 8655
+Median degree     : 3
+Avg clustering    : 0.209812
+Power-law gamma   : 1.5593  (R2=0.8515)
+Scale-free?       : Approx (gamma = 1.56)

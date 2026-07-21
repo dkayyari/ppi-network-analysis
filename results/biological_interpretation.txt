@@ -1,0 +1,45 @@
+Human PPI Network Analysis - Biological Interpretation
+=======================================================
+
+1. Degree of every node
+The degree of a protein is the number of other proteins it directly interacts with.
+Proteins with a high degree are called "hubs" (e.g. TP53, EGFR) and are often
+essential proteins involved in core biological processes. Most proteins in the
+network have a low degree (few interactions), while a small number of hubs have
+very high degrees -- this is a key feature of biological networks.
+
+2. Clustering Coefficient
+The clustering coefficient measures how connected a protein's neighbours are to
+each other. A high clustering coefficient means the protein sits inside a tight
+functional module or protein complex. The average clustering coefficient of this
+network is 0.2098, meaning proteins tend to form moderately tight local clusters,
+which often correspond to biological pathways or complexes.
+
+3. Average Clustering Coefficient (0.2098)
+This value tells us the network is moderately modular. Proteins do not interact
+randomly -- they tend to group into functional communities, which reflects the
+organised nature of cellular biology (e.g. signalling pathways, ribosomes,
+splicing complexes).
+
+4. Scale-Free Structure (gamma = 1.56, R2 = 0.851)
+The degree distribution follows an approximate power law, meaning the network is
+roughly scale-free. True scale-free networks have gamma between 2 and 3; our
+value of 1.56 is slightly below this, likely because curated PPI databases
+over-represent well-studied hub proteins. Biologically, scale-free structure means
+the network is robust to random protein loss (e.g. random mutations) but vulnerable
+to targeted removal of hub proteins -- which is why hub proteins are often essential
+genes and good drug targets.
+
+5. Shortest Path Lengths
+The mean shortest path between proteins in both sets is around 2.1-2.2, meaning
+any two proteins are on average only about 2 interactions apart. This "small-world"
+property means signals and information can travel very efficiently across the
+interaction network, which is important for fast cellular responses.
+
+6. Wilcoxon Rank-Sum Test (p = 0.4880)
+The test found no significant difference in path length distributions between
+Protein Set 1 and Protein Set 2 (p = 0.4880, p > 0.05). This means both protein
+sets are similarly positioned within the human PPI network -- neither set is more
+or less connected to the rest of the network than the other. Biologically, this
+suggests both sets of proteins operate within similarly accessible regions of the
+interactome, with no evidence that one group is more centralised than the other.

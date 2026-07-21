@@ -1,0 +1,7 @@
+Wilcoxon Rank-Sum (Mann-Whitney U) Test
+========================================
+List1: n=1176, mean=2.156, median=2.0
+List2: n=435, mean=2.198, median=2.0
+U statistic : 259326.00
+p-value     : 4.8795e-01
+Significant : NO (alpha=0.05)
